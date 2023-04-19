@@ -1,0 +1,32 @@
+<div class="title">
+    <h1>
+        {{operador}} Estudiante
+    </h1>
+</div>
+<div class="container">
+    <mat-card class="card">
+        <mat-card-subtitle>
+            Datos del estudiante
+        </mat-card-subtitle>
+
+        <form [formGroup]="form" (ngSubmit)="agregarEditarEstudiante()">
+            <mat-grid-list cols="2" rowHeight="80px">
+                <mat-grid-tile [colspan]="2">
+                    <input   class="input" matInput placeholder="Nombre" formControlName="nombre">
+                    
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <input  type="number" class="input" matInput placeholder="Edad" formControlName="Edad">
+                </mat-grid-tile>
+                <mat-grid-tile>
+                    <input  type="number" class="input" matInput placeholder="Grado (1-11)" formControlName="Grado">
+                </mat-grid-tile>
+                <mat-grid-tile [colspan]="2">
+                    <button type="submit" [disabled]="form.invalid" mat-raised-button color="primary" class="btnAceptar">Aceptar</button>
+                    <button mat-raised-button routerLink="/listEstudiantes">Volver</button>
+
+                </mat-grid-tile>
+            </mat-grid-list>
+        </form>
+    </mat-card>
+</div>

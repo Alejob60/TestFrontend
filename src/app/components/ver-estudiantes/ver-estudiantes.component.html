@@ -1,0 +1,18 @@
+<div class="title">
+    Detalles del Estudiante
+</div>
+<div *ngIf="estudiante!=null" class="container">
+    <mat-card class="card">
+        
+        <mat-card-title>{{estudiante.nombre}}</mat-card-title>
+        <mat-card-content>
+            <p><strong>Edad: {{estudiante.edad}}</strong></p>
+            <p><strong>Grado: {{estudiante.grado}}</strong></p>
+        </mat-card-content>
+        <mat-card-actions>
+            <button routerLink="listEstudiantes" mat-raised-button>volver</button>
+        </mat-card-actions>
+
+      </mat-card>
+</div>
+

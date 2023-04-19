@@ -1,0 +1,29 @@
+table {
+    width: 100%;
+  }
+
+
+
+
+
+td, th{
+    width: auto;
+}
+
+.delete{
+    cursor: pointer;
+    color: rgb(184, 22, 71);
+    
+}
+
+.search{
+    cursor: pointer;
+
+}
+.edit{
+    cursor: pointer;
+}
+.buttonw{
+    font-size: small;
+    line-height: 28px;
+}
